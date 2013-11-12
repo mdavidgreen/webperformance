@@ -1,6 +1,5 @@
-Human Perception and Performance
-
-Ilya Grigorik's presentation at Velocity NYC 2013 focused on performance as an issue of human perception.
+#Human Perception and Performance
+####Ilya Grigorik's presentation at Velocity NYC 2013 focused on performance as an issue of human perception.
 
 ### 1000 MS
 Ultimately, it's not about numbers and statistics as much as it is about how the vistors you really have feel about the application you are providing. That said, there is an underlying imperative to reduce the time it takes before a visitor can start interacting with your application as low as possible. There is a fabled 1000 millisecond goal developers strive to achieve, but it is important to recognize all the ways that it is a challenge to achieve in a mobile enviroment, given all the constraints we face today.
