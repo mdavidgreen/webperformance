@@ -1,6 +1,5 @@
-Human Perception and Performance
-
-Ilya Grigorik's presentation at Velocity NYC 2013 focused on performance as an issue of human perception.
+#Human Perception and Performance
+####Ilya Grigorik's presentation at Velocity NYC 2013 focused on performance as an issue of human perception.
 
 ### 1000 MS
 Ultimately, it's not about numbers and statistics as much as it is about how the vistors you really have feel about the application you are providing. That said, there is an underlying imperative to reduce the time it takes before a visitor can start interacting with your application as low as possible. There is a fabled 1000 millisecond goal developers strive to achieve, but it is important to recognize all the ways that it is a challenge to achieve in a mobile enviroment, given all the constraints we face today.
@@ -64,13 +63,13 @@ How many roundtrips does it take to render the content above the fold on the pag
 
 Optimize fetching, DNS resolution, and rendering in modern browsers by including appropriate link elements in the head of the document. These can provide hints and directives to the browser, allowing separate resources that a visitor is likely to need to download in parallel or in the background.
 
-The <link rel="dns-prefetch" href="http://example.com"> head element opens a connection to a host in the background. This is a low-risk, inexpensive thing to add to a page when you know you will be needing content from a particular host, such as a CDN provider, and you want the connection to be ready for you.
+The &lt;link rel="dns-prefetch" href="http://example.com"&gt; head element opens a connection to a host in the background. This is a low-risk, inexpensive thing to add to a page when you know you will be needing content from a particular host, such as a CDN provider, and you want the connection to be ready for you.
 
-The <link rel="subresource" href="http://example.com"> head element instructs the browser to start downloading specific files that this page will need, bypassing the normal prioritization defined by the placement of elements in the HTML.
+The &lt;link rel="subresource" href="http://example.com"&gt; head element instructs the browser to start downloading specific files that this page will need, bypassing the normal prioritization defined by the placement of elements in the HTML.
 
-The <link rel="prefetch" href="http://example.com"> head element is similar to the subresource element, but it is less specific to a particular page, and also more flexible about how the browser should carry out the recommendation. 
+The &lt;link rel="prefetch" href="http://example.com"&gt; head element is similar to the subresource element, but it is less specific to a particular page, and also more flexible about how the browser should carry out the recommendation. 
 
-The <link rel="prerender" href="http://example.com"> head element aggressively loads and renders content as if it were being displayed in a background tab of the browser, so it will be ready when the visitor switches to it.
+The &lt;link rel="prerender" href="http://example.com"&gt; head element aggressively loads and renders content as if it were being displayed in a background tab of the browser, so it will be ready when the visitor switches to it.
 
 ### Measure, Measure, Measure
 All of these approaches are subject to the needs of your visitors and the requirments of your particular application. It is important to measure actual usage to determine where your bottlenecks are, and whether they are affecting the experiences of users in a relevant way.
